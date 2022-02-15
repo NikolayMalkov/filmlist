@@ -13,7 +13,7 @@ const FilmItem = ({id, title}) => {
     
     const [titleInput, toggleTitle] = useState(true)
 
-    const baseUrl = "http://192.168.43.40:5000/films";
+    const baseUrl = "http://localhost:5000/films";
 
 // Delete film from database
     const delFilm = async () => {
