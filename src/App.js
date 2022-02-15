@@ -5,7 +5,6 @@ import {
   Routes,
 } from "react-router-dom"
 import Menu from './components/Menu';
-import FilmItem from './components/FilmItem';
 import Complete from './components/Complete';
 import Wishlist from './components/Wishlist';
 

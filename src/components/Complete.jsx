@@ -4,6 +4,9 @@ import FilmItem from './FilmItem';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Modal from './ModalForm';
+import Button from '@mui/material/Button';
+import Pagination from '@mui/material/Pagination';
+
 
 const Complete = () => {
 
@@ -35,7 +38,13 @@ const Complete = () => {
                                     id ={film._id} 
                                     title={film.title}
                                     /> )}
-            <button onClick={() => toggleModalVisible(true)}>Добавить</button>
+
+            <Button onClick={() => toggleModalVisible(true)} 
+                                    variant="contained" 
+                                    color="success">Добавить
+            </Button>
+            
+            <Pagination count={10} color="primary" />
         </div>
     )
 }
