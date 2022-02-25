@@ -20,6 +20,7 @@ const FilmItem = ({id, title}) => {
         const res = await axios.delete(baseUrl + '/' + id)
         console.log(res.status)
     }
+// Update film title
     const onSubmit = async (data) => {
        await axios.put(baseUrl + '/' + id, data).then(res => {
            toggleTitle(true)

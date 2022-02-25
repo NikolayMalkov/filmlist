@@ -35,7 +35,7 @@ const Complete = () => {
             <Modal active={modalVisible} 
                    toggle={toggleModalVisible} />
             {films.map( film => <FilmItem 
-                                    id ={film._id} 
+                                    id ={film.id} 
                                     title={film.title}
                                     /> )}
 
