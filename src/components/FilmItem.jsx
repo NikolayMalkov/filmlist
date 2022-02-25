@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 
 
 const FilmItem = ({id, title}) => {
-
+    // Хук обработчик формы
     const { register, handleSubmit } = useForm();
     
     const [titleInput, toggleTitle] = useState(true)
